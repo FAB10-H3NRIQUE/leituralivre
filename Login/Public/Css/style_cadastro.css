@@ -1,0 +1,95 @@
+/* STRUCTURE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  outline: 0;
+}
+@font-face {
+  font-family: 'EuphoriaScript';
+  src: url('Public/Fonts/EuphoriaScript-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'EuphoriaScript', sans-serif;
+  background-size: 1800px 1200px;
+  background-repeat: no-repeat;
+  background-position: right;
+  }
+
+.cadastro_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+  /* cadastro */
+.cadastro_box {
+  width: 495px;
+  height: 570px;
+  flex-shrink: 0;
+  border-radius: 84px;
+  background: #B3FEF5;
+  margin-top: 90px;
+}
+.cadastro_box h2 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 75px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-left: 110px;
+  margin-top: 100px;
+
+}
+.cadastro_box input {
+    width: 364px;
+    height: 61px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    margin: 15px;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 60px;
+}
+.cadastro_box .button {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0 0 0;
+}
+.cadastro_box button {
+  width: 169px;
+  height: 60px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: #55d9e0;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  transition: background 1s ease-in-out;
+}
+
+.cadastro_box button:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #0769d2, #55d9e0);
+}
+.alert {
+  display: none;
+  position: fixed;
+  top: 49.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #d93a60;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  z-index: 1000;
+}

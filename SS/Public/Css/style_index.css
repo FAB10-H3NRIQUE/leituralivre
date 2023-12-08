@@ -1,0 +1,352 @@
+/* STRUCTURE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    outline: 0;
+  }
+
+/* MENU */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 980px;
+  height: 150px;
+  border-radius: 80px;
+  padding: 10px;
+  margin: 0 0 50px 0;
+  border-radius: 97.5px;
+  background: #00B9BD;
+  margin-left: 500px; 
+  
+}
+
+.imagem2{
+  margin-top: 400px;
+}
+body{
+background-repeat: no-repeat;
+background-position: right;
+background-position: right;
+margin-top: -90px;
+background-size: 1300depx;
+}
+
+.acervo{
+margin-top: 200px;
+background-color: #00B9BD;
+}
+.logo{
+  width: 398px;
+  height: 350 px;
+  flex-shrink: 0;
+  margin-bottom: -300px;
+}
+
+
+.links {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  margin-left: 350px;
+}
+
+.links a {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin: 190px;
+
+}
+
+.links ion-icon {
+  width: 34px;
+  height: 35px;
+  color: black;
+}
+
+.links ion-icon:hover {
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.links a:hover .text {
+  opacity: 1;
+}
+
+/* BANNER */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 0 90px 0;
+}
+
+.banner img {
+  width: 1700px;
+  height: 200px;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 35px;
+  width: 2.5px;
+  background: linear-gradient(to bottom, rgb(85, 129, 224), rgb(163, 255, 238));
+  animation: moveLines 2s infinite alternate;
+}
+
+.lines::before,
+.lines::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.lines::before {
+  top: 0;
+}
+
+.lines::after {
+  bottom: 0;
+}
+.lines2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35px;
+  width: 2.5px;
+  background: linear-gradient(to bottom, rgb(85, 140, 224), rgb(163, 227, 255));
+  animation: moveLines2 2s infinite alternate;
+}
+
+.lines2::before,
+.lines2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.lines2::before {
+  top: 0;
+}
+
+.lines2::after {
+  bottom: 0;
+}
+/* ANIMATION BANNER */
+@keyframes moveLines {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(100%);
+  }
+}
+@keyframes moveLines2 {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+/* BIO PIETRO*/
+.bioP {
+  width: 97vw;
+  height: 526px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 150px 0;
+}
+.bioP img{
+  width: 600px;
+  border-radius: 7px;
+  box-shadow: 5px 8px 8px rgb(0 0 0 / 34%);
+}
+.bioP .lineBio{
+  border-radius: 7px;
+  width: 2.5px;
+  background: linear-gradient(to bottom, rgb(85, 166, 224), rgb(255 163 185));
+}
+.bioP .desc{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.desc p {
+font-family: Aubrey;
+font-size: 25px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0.14em;
+text-align: center;
+}
+/* BIO OSCAR */
+.bioO {
+  width: 97vw;
+  height: 526px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 0 0 150px 0;
+}
+.bioO img{
+  width: 600px;
+  border-radius: 7px;
+  box-shadow: -9px 6px 8px rgb(0 0 0 / 34%);
+}
+.bioO .lineBio{
+  border-radius: 7px;
+  width: 2.5px;
+  background: linear-gradient(to top, rgba(224, 85, 118, 1), rgb(255 163 185));
+}
+.bioO .desc{
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.desc p {
+font-family: Aubrey;
+font-size: 25px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0.14em;
+text-align: center;
+}
+
+/* ACERVO */
+.pub {
+  width: 33vw;
+  height: 500px;
+  background: #00B9BD;
+  display: flex;
+  margin: 0 0 150px 0;  
+  border-radius: 70px;
+  color:aliceblue;
+  margin-left: 20px;
+  margin-bottom: -300px;
+
+}
+
+.pub .pubtext{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pub p{
+  height: 125px;
+  top: 673px;
+  left: 862px;
+  font-size: 33px;
+  font-weight: 100;
+  line-height: 52px;
+  text-align: center;
+  margin-left:65px;
+  margin-right:80px;
+  margin-top: 20px;
+  
+}
+
+.pub2 p{
+  width: 469px;
+  height: 125px;
+  top: 673px;
+  left: 862px;
+  font-family: Aubrey;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0.14em;
+  text-align: center;
+  margin-left: 750px ;
+  margin-top: -350px;
+}
+
+.pub .cub {
+  width: 50%;
+  background: rgba(224, 85, 118, 1);
+}
+
+/* FOOTER */
+footer {
+  border-radius: 20.9px 20.9px 0px 0px;
+  display: flex;
+  width: 96.9vw;
+  height: 200px;
+  background: #00B9BD;
+  align-items: center;
+  padding: 15px;
+  margin-top: 600px;
+  font-family: Monospace;
+}
+footer p {
+  font-family: Aubrey;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.14em;
+  text-align: center;
+  color: white;  
+}
+
+/* USER ICON */
+.user-info {
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: #888888;
+  border: 1px solid #cacaca;
+  padding: 0.625rem;
+  margin: 46px 50px 0 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  height: 140px;
+  width: 100px;
+  resize: both;
+  overflow: auto;
+}
+.user-info button#log{
+  background: #cacaca00;
+  outline: none;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+.user-info button ion-icon{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.user-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 80%;
+}
+.user-icon ion-icon {
+    width: 50px;
+    height: 65px;
+}
